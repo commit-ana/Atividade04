@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa: Evolução dos Games</title>
+<!--Fonte do Google-->
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <!--Favicon-->
+<link rel="icon" type="image/png" href="../Ícones/search_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"></link>
+<link rel="StyleSheet" type="text/css" href="../style.css">
+</head>
+
+<body id="pagina-formulario">
+
+    <header class="pagina-formulario-header">
+        <h1 style="text-align: center;">PESQUISA SOBRE A EVOLUÇÃO DOS GAMES</h1>
+    </header>
+    
+<!--Introdução, Checkbox e Fieldset-->
+ <form class="pesquisa-games" action="#" method="post">
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+                
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+<br />
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+<br />
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" min="10" max="100">
+<br />
+    <label>Gênero:</label>
+    <input type="radio" id="feminino" name="genero" value="F">
+    <label for="feminino">Feminino</label>
+    <input type="radio" id="masculino" name="genero" value="M">
+    <label for="masculino">Masculino</label>                 
+    <input type="radio" id="outro" name="genero" value="O">
+    <label for="outro">Outro</label>               
+    <input type="radio" id="nao-informar" name="genero" value="N">
+    <label for="nao-informar">Prefiro não informar</label>
+</fieldset>
+            
+<!--Fieldset Preferência dos Games-->
+<fieldset class="preferencias-games">
+    <legend>Preferências de Games</legend>
+    <label for="primeiro-contato">Ano do primeiro contato com games:</label>
+    <input type="number" id="primeiro-contato" name="primeiro-contato" min="1970" max="2025">
+<br />  
+<br />            
+    <label>Plataformas que você joga atualmente:</label>
+<br />
+    <input type="checkbox" id="pc" name="plataforma" value="PC">
+    <label for="pc">PC</label>
+<br />                       
+    <input type="checkbox" id="playstation" name="plataforma" value="PlayStation">
+    <label for="playstation">PlayStation</label>
+<br />                 
+    <input type="checkbox" id="xbox" name="plataforma" value="Xbox">
+    <label for="xbox">Xbox</label>
+<br />                   
+    <input type="checkbox" id="nintendo" name="plataforma" value="Nintendo">
+    <label for="nintendo">Nintendo</label> 
+<br />                 
+    <input type="checkbox" id="mobile" name="plataforma" value="Mobile">
+    <label for="mobile">Mobile</label>
+<br />
+<br />
+    <!--Estrutura de seleção-->
+    <label for="genero-favorito">Gênero de game favorito:</label>
+<br />
+    <select id="genero-favorito" name="genero-favorito">
+    <option value="">Selecione...</option>
+    <option value="acao">Ação/Aventura</option>
+    <option value="rpg">RPG</option>
+    <option value="estrategia">Estratégia</option>
+    <option value="esportes">Esportes</option>
+    <option value="fps">FPS</option>
+    <option value="mmo">MMO</option>
+    <option value="indie">Indie</option>
+</select>
+</fieldset>
+            
+<!--Fieldset de Evolução-->
+    <fieldset>
+    <legend>Opinião sobre a Evolução dos Games</legend>
+                
+    <label>Qual foi o maior avanço na história dos games?</label>
+<br />                 
+    <input type="radio" id="graficos" name="avanco" value="graficos">
+    <label for="graficos">Gráficos 3D</label>
+<br />                        
+    <input type="radio" id="online" name="avanco" value="online">
+    <label for="online">Jogos online</label>
+<br />                     
+    <input type="radio" id="realidade-virtual" name="avanco" value="vr">
+    <label for="realidade-virtual">Realidade Virtual</label>
+<br />                     
+    <input type="radio" id="inteligencia-artificial" name="avanco" value="ia">
+    <label for="inteligencia-artificial">Inteligência Artificial</label>
+                 
+<!--Estrutura de Seleção de Melhor Década-->
+<br />
+    <label for="melhor-decada">Na sua opinião, qual foi a melhor década para games?</label>
+    <select id="melhor-decada" name="melhor-decada">
+        <option value="70">Anos 70</option>
+        <option value="80">Anos 80</option>
+        <option value="90">Anos 90</option>
+        <option value="00">Anos 2000</option>
+        <option value="10">Anos 2010</option>
+        <option value="20">Anos 2020</option>
+    </select>
+<br />
+<!--Comentário-->
+        <label for="opiniao">Como você avalia a evolução dos games até hoje?</label>
+        <textarea id="opiniao" name="opiniao" rows="2" cols="30"></textarea>
+            
+    </fieldset>
+
+<!--Botão de Reset e Enviar-->
+    <button type="reset" class="botao botao-reset">Limpar</button>
+    <button type="submit" class="botao botao-enviar">Enviar</button>
+</form>
+    
+</body>
+</html>

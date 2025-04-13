@@ -1,0 +1,330 @@
+/*Estilização da Página-Index*/
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: rgb(229, 173, 173);
+  margin: 20px auto;
+  border: rgb(8, 5, 5) solid 4px;
+  padding: 10px;
+}
+body h1 {
+  font-family:'Press Start 2P', monospace;
+  text-align: center;
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+}
+body p {
+  text-align: center;
+  font-size: 15px;
+  color: #000000;
+}
+body h2 {
+  font-family:'Times New Roman', Times, serif;
+  text-align: left;
+  color: #000000;
+  background-color: rgb(169, 83, 83);
+ font-size: 22px;
+}
+
+/*Estilização Menu na Página Index*/
+.Menu {
+  background-color: rgb(236, 208, 208);
+  text-align: left;
+  border-width: 10px ;
+  border: rgb(0, 0, 0);
+  margin: 20 auto;
+  font-family:sans-serif;
+  font-weight: 400;
+  border: 2px solid rgb(0, 0, 0);
+  float: left;
+}  
+.Menu li {
+  list-style: none;
+  position: relative;
+  float: left;
+  border-right: 2px solid rgb(0, 0, 0);
+}
+.Menu li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+.Menu li a:hover {
+  background-color: rgb(239, 198, 198);
+  color: rgb(229, 0, 0);
+  box-shadow: rgb(255, 255, 255);
+}
+.Menu li ul {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  background-color: rgb(250, 207, 207);
+  display: none;
+}
+.Menu li:hover ul {
+  display: block;
+}
+.Menu li ul li {
+  border: 1px solid rgb(0, 0, 0);
+  display: block;
+  width: 100px;
+}
+.imagem-entrada {
+  width: 50%;
+  height: 400px; 
+  background-image: url('Imagens/imagemdeentrada.jpg');
+  background-position: center; 
+  width: 100%;
+  background-size: 80%;
+  aspect-ratio: 16/9;
+  display: block;
+}
+
+/*Estilização do Footer na Página Index*/
+footer {
+  background-color: hsl(0, 0%, 7%);
+  color: #ffffff;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  margin: 0;;
+  box-sizing: border-box;
+}
+.rodape-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;        
+  padding: 0px;                
+}
+.rodape-div-1 {
+  margin: 10px;
+  justify-content: space-between;
+}
+.rodape-div-1-coluna h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ff1100;
+}
+.rodape-div-1-coluna p {
+  line-height: 2px;
+  color: #ffffff;
+  padding: 0px;
+}
+.rodape-div-1-coluna ul {
+  margin-bottom: 10px;
+  font-size: 14px; 
+}
+.rodape-div-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+.rodape-div-2-coluna h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ff0000;
+}
+.rodape-div-2-coluna p {
+  line-height: 2px;
+  color: #ffffff;
+  padding: 0;
+}
+.rodape-div-2-coluna ul li {
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.rodape-div-1-coluna ul li {
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.icones img {
+  border-color: rgb(163, 0, 0);
+  width: 35px;
+  height: 35px;
+  margin-right: 30px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border-radius: 10%;
+}
+/*---------------------FIM PAGINA INDEX----------------------*/
+
+/*Estilização da Página Formulário*/
+.pagina-formulario {
+  background-color: rosybrown;
+  border: rgb(91, 2, 2) solid 10px;
+  padding: 20px;
+}
+.pagina-formulario-header h1 {
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+  background-color: rgb(255, 203, 203);
+  font-size: 30px;
+}
+.pesquisa-games input {
+  width: 10%;
+  padding: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+/*------------------FIM DA PAGINA FORMULÁRIO-------------------*/
+
+/*Estilização da página Atari*/
+.pagina-atari {
+background-color: #9f7d7d;
+text-align: left;
+}
+.pagina-atari h1 {
+font-family: 'VT323', monospace;
+margin-bottom: 30px;
+}
+.pagina-atari h2 {
+  font-family:'Times New Roman', Times, serif;
+  color: #000000;
+  background-color: rgb(255, 186, 186);
+  font-size: 22px;
+}
+.pagina-atari section {
+font-size: 17px;
+}
+.imagem-entrada-atari {
+  width: 50%;
+  height: 400px; 
+  background-image: url('Imagens/atari.jpeg');
+  width: 100%;
+  background-size: 80%;
+  aspect-ratio: 16/9;
+  display: block;
+}
+/*----------------------FIM DA PAGINA ATARI--------------------------*
+
+/*Estilização da página Nintendo*/
+.pagina-nintendo {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #d0acaf;
+  text-align: left;
+  font-size: 17px;
+}
+.pagina-nintendo h1 {
+  font-family: 'Bungee', cursive;
+  margin-bottom: 30px;
+  color: #000;
+}
+.pagina-nintendo main {
+  margin: auto;
+}
+.pagina-nintendo h2 {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(122, 75, 75);
+  color: #000000;
+  text-align: left;
+}
+.pagina-nintendo img {
+  background-image: url('Imagens/nintendo.jpeg');
+  align-items: center;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+/*----------------------FIM DA PAGINA NINTENDO--------------------------*
+
+/*Estilização da página consoles.html*/
+
+.pagina-consoles {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: rgb(126, 99, 99);
+  margin: 20px auto;
+  border: rgb(8, 5, 5) solid 4px;
+  padding: 10px;
+}
+.pagina-consoles h1 {
+  font-family:'Press Start 2P', monospace;
+  text-align: center;
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+}
+.pagina-consoles p {
+  text-align: center;
+  font-size: 15px;
+  color: #000000;
+}
+.pagina-consoles h2 {
+  font-family:'Times New Roman', Times, serif;
+  text-align: left;
+  color: #fffcfc;
+  background-color: rgb(65, 40, 40);
+ font-size: 22px;
+}
+/*-------------------FIM DA PÁGINA CONSOLES-----------------------*/
+
+  /*Estilização da página cinematica.html*/
+  .pagina-cinematica {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(191, 171, 171);
+    margin: 20px auto;
+    border: rgb(0, 0, 0) solid 4px;
+    padding: 10px;
+  }
+  .pagina-cinematica h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .pagina-cinematica p {
+    text-align: left;
+    font-size: 15px;
+    color: #000000;
+  }
+  .pagina-cinematica h2 {
+    font-family:'Times New Roman', Times, serif;
+    text-align: left;
+    color: #ffe9e9;
+    background-color: rgb(94, 62, 62);
+   font-size: 22px;
+  }
+  .pagina-cinematica footer {
+    background-color: hsl(0, 15%, 44%);
+    color: #000000;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    margin: 0;;
+    box-sizing: border-box;
+  }
+/*------------------------FIM DA PAGINA CINEMATICA-------------------*/
+
+  /*Estilização da página impacto.html*/
+.pagina-impacto {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: rgb(175, 166, 166);
+  margin: 20px auto;
+  border: rgb(0, 0, 0) solid 4px;
+  padding: 10px;
+}
+.pagina-impacto h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+}
+.pagina-impacto p {
+  text-align: center;
+  font-size: 15px;
+  color: #000000;
+}
+.pagina-impacto h2 {
+  font-family:'Times New Roman', Times, serif;
+  text-align: left;
+  color: #ffe9e9;
+  background-color: rgb(72, 10, 10);
+  font-size: 22px;
+}
+
+
+/*----------------------FIM------------------------------- */
